@@ -33,6 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </div>
 </div>
 
+
 <a href="http://dribbble.com/shots/1265587-Registration-Template-PSD?list=everyone" target="_blank">Design by: Asif Aleem</a>
 
 <?php echo form_close() ?>
