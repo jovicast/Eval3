@@ -11,8 +11,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 
+
+
 <div id="bg">
   <div class="module">
+   
     <ul>
       <li class="tab activeTab"><img src="https://i.imgur.com/Fk1Urva.png" alt="" class="icon"/></li>
       <li class="tab" ><img src="https://i.imgur.com/ZsRgIDD.png" alt="" class="icon"/></li>
@@ -21,15 +24,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </ul>
     
     <form class="form">
-      <input type="text" placeholder="primer nombre" class="textbox" />
-      <input type="text" placeholder="Apellido" class="textbox" />
-      <input type="text" placeholder="Direccion de Email" class="textbox" />
-      <input type="button" value="Next" class="button" />
-    </form>
+      <?php echo form_open("Welcome/validar")?>
+      <input type="text" name="myriam" placeholder="primer nombre" class="textbox" />
+      <input type="text" name="castillo" placeholder="Apellido" class="textbox" />
+      <input type="text" name="correo" placeholder="Direccion de Email" class="textbox" />
+      <input type="submit" value="Next" class="button" />
+    
   </div>
 </div>
 
 <a href="http://dribbble.com/shots/1265587-Registration-Template-PSD?list=everyone" target="_blank">Design by: Asif Aleem</a>
+
+<?php echo form_close() ?>
 
 </body>
 </html>
