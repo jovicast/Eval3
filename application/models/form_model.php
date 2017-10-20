@@ -24,6 +24,8 @@ class form_model extends CI_Model
 		else
 		{
 			echo "Algo salio mal";
+			
+
 		}
 	}
 }
